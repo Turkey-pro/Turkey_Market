@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Turkey Magic ✈️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:#f4f4f4;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1800&auto=format&fit=crop");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+overflow:hidden;
+}
+
+/* trainée avion */
+
+.hero::before{
+content:"";
+position:absolute;
+width:220%;
+height:5px;
+background:white;
+opacity:0.2;
+top:28%;
+left:-50%;
+transform:rotate(-14deg);
+}
+
+/* avion */
+
+.hero::after{
+content:"✈";
+position:absolute;
+top:14%;
+right:10%;
+font-size:100px;
+opacity:0.2;
+color:white;
+transform:rotate(-12deg);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:1000px;
+}
+
+.logo{
+width:380px;
+max-width:90%;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,0.5);
+border:5px solid rgba(255,255,255,0.1);
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:900;
+color:#f1bf49;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:32px;
+font-weight:700;
+color:white;
+}
+
+.hero small{
+display:block;
+margin-top:20px;
+font-size:22px;
+color:#ddd;
+}
+
+/* SECTION */
+
+.products{
+padding:100px 40px;
+max-width:1500px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:60px;
+margin-bottom:70px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* IMAGES */
+
+.product-image{
+height:360px;
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+}
+
+/* overlays couleurs */
+
+.black-overlay{
+background:rgba(0,0,0,0.35);
+}
+
+.red-overlay{
+background:rgba(255,0,0,0.25);
+}
+
+.blue-overlay{
+background:rgba(0,100,255,0.25);
+}
+
+.gold-overlay{
+background:rgba(255,200,0,0.25);
+}
+
+.green-overlay{
+background:rgba(0,255,100,0.2);
+}
+
+/* LABEL */
+
+.label{
+position:absolute;
+bottom:20px;
+left:20px;
+background:black;
+color:white;
+padding:12px 20px;
+border-radius:50px;
+font-weight:800;
+font-size:18px;
+z-index:2;
+}
+
+/* CONTENT */
+
+.content{
+padding:30px;
+}
+
+.content h2{
+font-size:34px;
+margin-bottom:12px;
+}
+
+.content p{
+color:#555;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.btn{
+width:100%;
+padding:16px;
+border:none;
+border-radius:50px;
+background:black;
+color:white;
+font-size:18px;
+font-weight:800;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#f1bf49;
+color:black;
+}
+
+/* BANNER */
+
+.banner{
+background:black;
+color:white;
+padding:100px 20px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.banner::before{
+content:"✈";
+position:absolute;
+font-size:250px;
+opacity:0.05;
+right:5%;
+top:-20px;
+}
+
+.banner h2{
+font-size:60px;
+color:#f1bf49;
+margin-bottom:20px;
+}
+
+.banner p{
+font-size:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#888;
+text-align:center;
+padding:35px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:24px;
+}
+
+.section-title{
+font-size:42px;
+}
+
+.banner h2{
+font-size:40px;
+}
+
+.banner p{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<!-- METS TON IMAGE -->
+<img src="logo.png" class="logo">
+
+<h1>TURKEY MAGIC</h1>
+
+<p>
+Tes cheveux ont pris le vol retour ✈️
+</p>
+
+<small>
+Provenant de Turkish Market 🇹🇷
+</small>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+<h2 class="section-title">
+Nos shampoings magiques
+</h2>
+
+<div class="grid">
+
+<!-- BLACK -->
+
+<div class="card">
+
+<div class="product-image"
+style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop');">
+
+<div class="overlay black-overlay"></div>
+
+<div class="label">
+BLACK EDITION
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Black Edition</h2>
+
+<p>
+Le retour capillaire premium.
+Même ton barber va demander la recette.
+</p>
+
+<button class="btn"
+onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+Acheter ✈️
+</button>
+
+</div>
+
+</div>
+
+<!-- RED -->
+
+<div class="card">
+
+<div class="product-image"
+style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop');">
+
+<div class="overlay red-overlay"></div>
+
+<div class="label">
+RED BOOST
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Red Boost</h2>
+
+<p>
+Résultats visibles avant l’atterrissage.
+Urgence calvitie activée.
+</p>
+
+<button class="btn"
+onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+Acheter ✈️
+</button>
+
+</div>
+
+</div>
+
+<!-- BLUE -->
+
+<div class="card">
+
+<div class="product-image"
+style="background-image:url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1200&auto=format&fit=crop');">
+
+<div class="overlay blue-overlay"></div>
+
+<div class="label">
+BLUE SKY HAIR
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Blue Sky Hair</h2>
+
+<p>
+Inspiré des vols Istanbul Premium.
+Cheveux + confiance inclus.
+</p>
+
+<button class="btn"
+onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+Acheter ✈️
+</button>
+
+</div>
+
+</div>
+
+<!-- GOLD -->
+
+<div class="card">
+
+<div class="product-image"
+style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop');">
+
+<div class="overlay gold-overlay"></div>
+
+<div class="label">
+GOLD LUXURY
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Gold Luxury</h2>
+
+<p>
+Version influenceur deluxe.
+Parfait pour selfies HD.
+</p>
+
+<button class="btn"
+onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+Acheter ✈️
+</button>
+
+</div>
+
+</div>
+
+<!-- GREEN -->
+
+<div class="card">
+
+<div class="product-image"
+style="background-image:url('https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop');">
+
+<div class="overlay green-overlay"></div>
+
+<div class="label">
+GREEN RECOVERY
+</div>
+
+</div>
+
+<div class="content">
+
+<h2>Green Recovery</h2>
+
+<p>
+Même ton coiffeur va croire à la magie.
+Effet waouh garanti.
+</p>
+
+<button class="btn"
+onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+Acheter ✈️
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="banner">
+
+<h2>
+Le shampoing qui fait revenir les cheveux ✈️
+</h2>
+
+<p>
+Direction : Turkish Market 🇹🇷
+</p>
+
+</section>
+
+<footer>
+
+Turkey Magic © 2026 — Produit 100% parodie 😂
+
+</footer>
+
+</body>
+</html>
